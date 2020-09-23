@@ -75,6 +75,48 @@
 	        animation-name: anim-3;
 }
 
+img{
+  height:200px;
+  width:100%;
+}
+
+.item{
+  padding-left:10px;
+  padding-right:10px;
+}
+.item-card{
+  transition:0.5s;
+  cursor:pointer;
+}
+
+.card:hover{
+  transform: scale(1.05);
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+}
+
+
+.card::before, .card::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: scale3d(0, 0, 1);
+  transition: transform .3s ease-out 0s;
+  background: rgba(255, 255, 255, 0.1);
+  content: '';
+  pointer-events: none;
+}
+.card::before {
+  transform-origin: left top;
+}
+.card::after {
+  transform-origin: right bottom;
+}
+.card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
+  transform: scale3d(1, 1, 1);
+}
+
 @-webkit-keyframes anim-1 {
 	0%, 8.3% { left: -100%; opacity: 0; }
   8.3%,25% { left: 25%; opacity: 1; }
@@ -144,8 +186,8 @@
 								<ul class="nav navbar-nav navbar-right">
 									<li><a class="active smoth-scroll" href="#particles-js">Home</a></li>
 									<li><a class="smoth-scroll" href="">Ide</a></li>
-									<li><a class="smoth-scroll" href="Signup.php">Signup</a></li>
-									<li><a class="smoth-scroll" href="Login.php">Login</a></li>
+									<li><a class="smoth-scroll" href="#">Signup</a></li>
+									<li><a class="smoth-scroll" href="#">Login</a></li>
 									<li><a class="smoth-scroll" href="Contact.php">Contact</a></li>
 								</ul>
 							</div>
@@ -175,7 +217,7 @@
 				</div>
 
 				<!----1st image---->
-
+<!-- 
 				<div class="col-md-4 col-sm-6">
 					<div class="blog-item">
 						<a   class="blog-img">
@@ -183,35 +225,60 @@
 						</a>
 						
 					</div>
-				</div>
+				</div> -->
 
 				<!---2nd image ------->
 
-				<div class="col-md-4 col-sm-6">
+				<!-- <div class="col-md-4 col-sm-6">
 					<div class="blog-item">
 						<a   class="blog-img">
 								<img src="https://media.geeksforgeeks.org/img-practice/courses/Live-22Sep-Slider-Web.png" data_src="https://media.geeksforgeeks.org/img-practice/courses/Live-22Sep-Slider-Web.png" alt="." display="block">
 						</a>
 						
 					</div>
-				</div>
+				</div> -->
 
 				<!--- 3rd image------>
 
-				<div class="col-md-4 col-sm-6">
+				<!-- <div class="col-md-4 col-sm-6">
 					<div class="blog-item">
 						<a   class="blog-img">
 								<img src="https://media.geeksforgeeks.org/img-practice/courses/GCL-14Sep-Slider-Web.png" data_src="https://media.geeksforgeeks.org/img-practice/courses/GCL-14Sep-Slider-Web.png" alt="." display="block">
 						</a>
 						
 					</div>
-				</div>
+				</div> -->
 
 				
 
 			</div>
 		</div>
 	</section> 
+
+	<div class="container mt-2">
+		<div class="row">
+    		<div class="col-md-4 col-sm-6 item">
+      			<div class="card item-card card-block">
+    				<img src="assets/img/code1.jpeg" alt="code1">
+        
+  				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 item">
+      			<div class="card item-card card-block">
+    				<img src="assets/img/code2.png" alt="code2">
+        
+  				</div>
+			</div>
+			<div class="col-md-4 col-sm-6 item">
+      			<div class="card item-card card-block">
+    				<img src="assets/img/code3.jpeg" alt="code3">
+        
+  				</div>
+			</div>
+		</div>
+	</div>
+
+			
 
 
 
@@ -222,7 +289,7 @@
 </body>
 
 
-<footer id="footer">
+<!-- <footer id="footer">
 		<div class="container">
 			<div class="col-md-12 text-center">
 
@@ -235,7 +302,7 @@
 				</ul>
 			</div>
 		</div>
-	</footer>		
+	</footer>		 -->
 			
 
 
