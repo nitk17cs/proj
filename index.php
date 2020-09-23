@@ -4,7 +4,7 @@
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 	 <title>ide2</title>
 	 
-	 <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo.png">
+	 <link rel="shortcut icon" type="image/x-icon" href="assets/img/ide2.png">
     
 	<!-- css plugin ----------------------------------------------------------------------------------------------------------------------------------------------- -->
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -12,6 +12,9 @@
 	<link rel="stylesheet" href="assets/css/magnific-popup.css">
 	<link rel="stylesheet" href="assets/css/flexslider.css">
 	<link rel="stylesheet" href="assets/css/aos.css">
+
+
+    
 
 	<!-- main css ------------------------------------------------------------------------------------------------------------------------------------------------- -->
 	<link rel="stylesheet" href="assets/css/style.css">
@@ -60,10 +63,10 @@
 							<div class="navbar-collapse collapse">
 								<ul class="nav navbar-nav navbar-right">
 									<li><a class="active smoth-scroll" href="#particles-js">Home</a></li>
-									<li><a class="smoth-scroll" href="#about">Ide</a></li>
-									<li><a class="smoth-scroll" href="#skills">Signup</a></li>
+									<li><a class="smoth-scroll" href="">Ide</a></li>
+									<li><a class="smoth-scroll" href="Signup.php">Signup</a></li>
 									<li><a class="smoth-scroll" href="Login.php">Login</a></li>
-									<li><a class="smoth-scroll" href="COntact.php">Contact</a></li>
+									<li><a class="smoth-scroll" href="Contact.php">Contact</a></li>
 								</ul>
 							</div>
 						</div>
@@ -74,17 +77,54 @@
 	</div>
 	<!-- // NAVIGATION END ---------------------------------------------------------------------------------------------------------------------------------------------->
 
+			
+	<section id="course">
+		<div class="container text-center">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<br><h2>Courses</h2></br>
+				</div>
 
+				<!----1st image---->
+
+				<div class="col-md-4 col-sm-6">
+					<div class="blog-item">
+						<a   class="blog-img">
+								<img src="https://media.geeksforgeeks.org/img-practice/courses/CIP-22Sep-Slider-Web.png" data_src="https://media.geeksforgeeks.org/img-practice/courses/CIP-22Sep-Slider-Web.png" alt="." display="block">
+						</a>
+						
+					</div>
+				</div>
+
+				<!---2nd image ------->
+
+				<div class="col-md-4 col-sm-6">
+					<div class="blog-item">
+						<a   class="blog-img">
+								<img src="https://media.geeksforgeeks.org/img-practice/courses/Live-22Sep-Slider-Web.png" data_src="https://media.geeksforgeeks.org/img-practice/courses/Live-22Sep-Slider-Web.png" alt="." display="block">
+						</a>
+						
+					</div>
+				</div>
+
+				<!--- 3rd image------>
+
+				<div class="col-md-4 col-sm-6">
+					<div class="blog-item">
+						<a   class="blog-img">
+								<img src="https://media.geeksforgeeks.org/img-practice/courses/GCL-14Sep-Slider-Web.png" data_src="https://media.geeksforgeeks.org/img-practice/courses/GCL-14Sep-Slider-Web.png" alt="." display="block">
+						</a>
+						
+					</div>
+				</div>
+
+				
+
+			</div>
+		</div>
+	</section> 
 
 	
-
-
-
-
-
-
-
-
     <script src="particles.js"></script>
     <script src="app.js"></script>
 </body>
