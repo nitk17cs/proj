@@ -30,6 +30,86 @@
         .navbar-custom { 
             background-color: black; 
         } 
+
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  
+}
+
+
+		.item-1, 
+.item-2, 
+.item-3 {
+	position: absolute;
+  display: block;
+	top: 2em;
+  
+  width: 60%;
+  
+  font-size: 2em;
+
+	-webkit-animation-duration: 20s;
+
+	        animation-duration: 20s;
+	-webkit-animation-timing-function: ease-in-out;
+	        animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: infinite;
+	        animation-iteration-count: infinite;
+}
+
+.item-1{
+	-webkit-animation-name: anim-1;
+	        animation-name: anim-1;
+}
+
+.item-2{
+	-webkit-animation-name: anim-2;
+	        animation-name: anim-2;
+}
+
+.item-3{
+	-webkit-animation-name: anim-3;
+	        animation-name: anim-3;
+}
+
+@-webkit-keyframes anim-1 {
+	0%, 8.3% { left: -100%; opacity: 0; }
+  8.3%,25% { left: 25%; opacity: 1; }
+  33.33%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-1 {
+	0%, 8.3% { left: -100%; opacity: 0; }
+  8.3%,25% { left: 25%; opacity: 1; }
+  33.33%, 100% { left: 110%; opacity: 0; }
+}
+
+@-webkit-keyframes anim-2 {
+	0%, 33.33% { left: -100%; opacity: 0; }
+  41.63%, 58.29% { left: 25%; opacity: 1; }
+  66.66%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-2 {
+	0%, 33.33% { left: -100%; opacity: 0; }
+  41.63%, 58.29% { left: 25%; opacity: 1; }
+  66.66%, 100% { left: 110%; opacity: 0; }
+}
+
+@-webkit-keyframes anim-3 {
+	0%, 66.66% { left: -100%; opacity: 0; }
+  74.96%, 91.62% { left: 25%; opacity: 1; }
+  100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-3 {
+	0%, 66.66% { left: -100%; opacity: 0; }
+  74.96%, 91.62% { left: 25%; opacity: 1; }
+  100% { left: 110%; opacity: 0; }
+}
     </style> 
 
 </head>
@@ -77,7 +157,16 @@
 	</div>
 	<!-- // NAVIGATION END ---------------------------------------------------------------------------------------------------------------------------------------------->
 
-			
+<body translate="no">
+<br></br>
+    <p class="item-1">	Codeforces Round #672 (Div. 2) &nbsp Sep/24/2020   &nbsp 20:05UTC+5.5</p>
+	<p class="item-2">  <a href="https://discuss.codechef.com/g/CodeChef-DSA-Learners-Group">https://discuss.codechef.com/g/CodeChef-DSA-Learners-Group</a></p>
+	<p class="item-3">
+
+
+<br></br>
+<br></br>
+<br></br>
 	<section id="course">
 		<div class="container text-center">
 			<div class="row">
@@ -124,10 +213,31 @@
 		</div>
 	</section> 
 
-	
+
+
+
+
     <script src="particles.js"></script>
     <script src="app.js"></script>
 </body>
+
+
+<footer id="footer">
+		<div class="container">
+			<div class="col-md-12 text-center">
+
+				<h3> follow us ;)</h3>
+				<ul class="social-icons-footer">
+				
+						<li><a href="https://twitter.com/cmritspeaks?lang=en" target="_blank"><i class="fa fa-twitter"></i></a></li>
+				
+						<li><a href="https://www.linkedin.com/school/cmr-institute-of-technology/?originalSubdomain=in" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+				</ul>
+			</div>
+		</div>
+	</footer>		
+			
+
 
  
 </html>

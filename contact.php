@@ -6,7 +6,7 @@
      <title>ide2</title>
 
 	<!-- tab img -->
-	<link rel="shortcut icon" type="image/x-icon" href="assets/img/logo.png">
+	<link rel="shortcut icon" type="image/x-icon" href="assets/img/ide2.png">
     
 	<!-- css plugin ----------------------------------------------------------------------------------------------------------------------------------------------- -->
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
