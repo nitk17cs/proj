@@ -42,6 +42,7 @@
 body {
  
   overflow: hidden; /* Hide scrollbars */
+ 
 }
 
 .card{
@@ -87,18 +88,26 @@ body {
 }
 
 img{
-  height:200px;
+  height:150px;
   width:100%;
 }
 
-.item{
-  padding-left:10px;
-  padding-right:10px;
+.card {
+    width: 100%;
+    height: 200px;
+    padding: 20px;
+    background-color:lightgray;
 }
+
+/* .item{
+  padding-left:5px;
+  padding-right:5px;
+} */
 .item-card{
   transition:0.5s;
   cursor:pointer;
 }
+
 
 .card:hover{
   transform: scale(1.05);
@@ -114,6 +123,7 @@ img{
   left: 0;
   transform: scale3d(0, 0, 1);
   transition: transform .3s ease-out 0s;
+  background: rgba(255, 255, 255, 0.1);
   content: '';
   pointer-events: none;
 }
@@ -196,7 +206,7 @@ img{
 								<ul class="nav navbar-nav navbar-right">
 									<li><a class="active smoth-scroll" href="#particles-js">Home</a></li>
 									<li><a class="smoth-scroll" href="">Ide</a></li>
-									<li><a class="smoth-scroll" href="#">Signup</a></li>
+									<li><a class="smoth-scroll" href="signup.php">Signup</a></li>
 									<li><a class="smoth-scroll" href="#">Login</a></li>
 									<li><a class="smoth-scroll" href="Contact.php">Contact</a></li>
 								</ul>
@@ -266,27 +276,34 @@ img{
 	</section> 
 
 	<div class="container mt-2">
-		<div class="row">
-    		<div class="col-md-4 col-sm-6 item">
-      			<div class="card item-card card-block">
-    				<img src="assets/img/code1.jpeg"  alt="code1">
+
+  <div class="row">
+    <div class="col-md-4 col-sm-6 item">
+      <div class="card item-card card-block">
+      
+    <img src="assets/img/code1.jpeg" alt="code1">
         
-  				</div>
-			</div>
-			<div class="col-md-4 col-sm-6 item">
-      			<div class="card item-card card-block">
-    				<img src="assets/img/code2.png"  alt="code2">
+  </div>
+    </div>
+    <div class="col-md-4 col-sm-6 item">
+      <div class="card item-card card-block">
+      
+    <img src="assets/img/code2.png" alt="code2">
+         
+  </div>
+    </div>
+    <div class="col-md-4 col-sm-6 item">
+      <div class="card item-card card-block">
+      
+    <img src="assets/img/code3.jpeg" alt="code3">
         
-  				</div>
-			</div>
-			<div class="col-md-4 col-sm-6 item">
-      			<div class="card item-card card-block">
-    				<img src="assets/img/code3.jpeg"  alt="code3">
-        
-  				</div>
-			</div>
-		</div>
-	</div>
+  </div>
+    </div>
+       
+  </div>
+  
+</div>
+
 
 			
 
@@ -297,7 +314,7 @@ img{
 <!--------------- welcome ide2 --->
 
 
-	<div class="description col-md-6 col-sm-4 col-xs-12">
+	<!-- <div class="description col-md-6 col-sm-4 col-xs-12">
 		<h2> Welcome  <strong style="color: #4cd137"> IDE2</strong></h2>
 			<h4> No.1 coding platform !!</h4>
 					<p> Our IDE2 platofrom is aimed at improving your coding skills.<em> EAT,SLEEP </em>and<em> CODE </em>
@@ -310,7 +327,7 @@ img{
 								<div class="numscroller roller-title-number-2 scrollzip isShown" data-slno="2" data-min="0" data-max="12" data-delay="6" data-increment="1">3</div>
 								<div class="count-name-intro">Courses Available  <i class="fa fa-youtube-play"></i></div>
 							</div>
-						</div>
+						</div> -->
 
 
 
