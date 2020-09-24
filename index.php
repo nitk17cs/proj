@@ -25,6 +25,15 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
 	<style> 
+.count-item
+ {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
         /* Modify the background color */ 
           
         .navbar-custom { 
@@ -205,8 +214,13 @@ img{
 							<div class="navbar-collapse collapse">
 								<ul class="nav navbar-nav navbar-right">
 									<li><a class="active smoth-scroll" href="#particles-js">Home</a></li>
+<<<<<<< HEAD
 									<li><a class="smoth-scroll" href="">Ide</a></li>
 									<li><a class="smoth-scroll" href="signup.php">Signup</a></li>
+=======
+									<li><a class="smoth-scroll" href="ide.php">Ide</a></li>
+									<li><a class="smoth-scroll" href="#">Signup</a></li>
+>>>>>>> 038bf9a97485131e7d1a3c3136f7a56c7a9da515
 									<li><a class="smoth-scroll" href="#">Login</a></li>
 									<li><a class="smoth-scroll" href="Contact.php">Contact</a></li>
 								</ul>
@@ -322,19 +336,24 @@ img{
 					</p>			 
 	</div>
 
+
 	<div class="col-md-6 col-sm-6 col-xs-6">
 							<div class="count-item">
 								<div class="numscroller roller-title-number-2 scrollzip isShown" data-slno="2" data-min="0" data-max="12" data-delay="6" data-increment="1">3</div>
-								<div class="count-name-intro">Courses Available  <i class="fa fa-youtube-play"></i></div>
+								<div class="count-name-intro">Courses Available  "<i class="fa fa-youtube-play"></i></div>
 							</div>
+<<<<<<< HEAD
 						</div> -->
 
 
 
+=======
+	</div>
+>>>>>>> 038bf9a97485131e7d1a3c3136f7a56c7a9da515
 
 
-    <script src="particles.js"></script>
-    <script src="app.js"></script>
+<script src="particles.js"></script>
+<script src="app.js"></script>
 </body>
 
 
