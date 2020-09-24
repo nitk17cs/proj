@@ -39,8 +39,19 @@
   
 }
 
+body {
+ 
+  overflow: hidden; /* Hide scrollbars */
+}
 
-		.item-1, 
+.card{
+		width: 700px;
+		height: 200px;
+		
+	
+	}
+
+.item-1, 
 .item-2, 
 .item-3 {
 	position: absolute;
@@ -103,7 +114,6 @@ img{
   left: 0;
   transform: scale3d(0, 0, 1);
   transition: transform .3s ease-out 0s;
-  background: rgba(255, 255, 255, 0.1);
   content: '';
   pointer-events: none;
 }
@@ -259,19 +269,19 @@ img{
 		<div class="row">
     		<div class="col-md-4 col-sm-6 item">
       			<div class="card item-card card-block">
-    				<img src="assets/img/code1.jpeg" alt="code1">
+    				<img src="assets/img/code1.jpeg"  alt="code1">
         
   				</div>
 			</div>
 			<div class="col-md-4 col-sm-6 item">
       			<div class="card item-card card-block">
-    				<img src="assets/img/code2.png" alt="code2">
+    				<img src="assets/img/code2.png"  alt="code2">
         
   				</div>
 			</div>
 			<div class="col-md-4 col-sm-6 item">
       			<div class="card item-card card-block">
-    				<img src="assets/img/code3.jpeg" alt="code3">
+    				<img src="assets/img/code3.jpeg"  alt="code3">
         
   				</div>
 			</div>
@@ -279,6 +289,28 @@ img{
 	</div>
 
 			
+
+
+<br></br>
+
+
+<!--------------- welcome ide2 --->
+
+
+	<div class="description col-md-6 col-sm-4 col-xs-12">
+		<h2> Welcome  <strong style="color: #4cd137"> IDE2</strong></h2>
+			<h4> No.1 coding platform !!</h4>
+					<p> Our IDE2 platofrom is aimed at improving your coding skills.<em> EAT,SLEEP </em>and<em> CODE </em>
+						<br>
+					</p>			 
+	</div>
+
+	<div class="col-md-6 col-sm-6 col-xs-6">
+							<div class="count-item">
+								<div class="numscroller roller-title-number-2 scrollzip isShown" data-slno="2" data-min="0" data-max="12" data-delay="6" data-increment="1">3</div>
+								<div class="count-name-intro">Courses Available  <i class="fa fa-youtube-play"></i></div>
+							</div>
+						</div>
 
 
 
@@ -289,7 +321,7 @@ img{
 </body>
 
 
-<!-- <footer id="footer">
+<footer id="footer">
 		<div class="container">
 			<div class="col-md-12 text-center">
 
@@ -302,7 +334,7 @@ img{
 				</ul>
 			</div>
 		</div>
-	</footer>		 -->
+	</footer>		
 			
 
 
