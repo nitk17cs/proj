@@ -1,3 +1,18 @@
+<?php
+
+	session_start();
+	
+	if(!isset($_SESSION['username'])){
+		header("Location: index.php");
+	}
+
+	error_reporting(0);
+	
+	include("connection.php");
+
+?>
+
+
 <html>
 <head>
 	<title>ide2</title>
@@ -30,6 +45,7 @@ display:inline-block;
 <ul class="breadcrumb">
 	<li><a href="index.php">Home</a></li>
 	<li><a href="rank.php">Rank</a></li>
+  <li><a href="logout.php">Logout</a></li>
 </ul>	
 <form>
   <div class="form-group col-sm-7 col-xs-12 inputDiv">

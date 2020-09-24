@@ -184,7 +184,7 @@ img{
 									<li><a class="active smoth-scroll" href="#particles-js">Home</a></li>
 									<li><a class="smoth-scroll" href="ide.php">Ide</a></li>
 									<li><a class="smoth-scroll" href="signup.php">Signup</a></li>
-									<li><a class="smoth-scroll" href="#">Login</a></li>
+									<li><a class="smoth-scroll" href="login.php">Login</a></li>
 									<li><a class="smoth-scroll" href="Contact.php">Contact</a></li>
 								</ul>
 							</div>
@@ -197,6 +197,7 @@ img{
 	<!-- // NAVIGATION END ---------------------------------------------------------------------------------------------------------------------------------------------->
 <body translate="no">
 <br></br>
+
     <p class="item-1">	Codeforces Round #672 (Div. 2) &nbsp Sep/24/2020   &nbsp 20:05UTC+5.5</p>
 	<p class="item-2">  <a href="https://discuss.codechef.com/g/CodeChef-DSA-Learners-Group">https://discuss.codechef.com/g/CodeChef-DSA-Learners-Group</a></p>
 	<p class="item-3">
