@@ -26,6 +26,10 @@
 </head>
 
 <body>
+<ul class="breadcrumb">
+	<li><a href="index.php">Home</a></li>
+	<li><a href="contact.php">Contact</a></li>
+</ul>	
 <!-- // CONTACT BEGIN ------------------------------------------------------------------------------------------------------------------------------------------------>
 <section id="contact">
 		<div class="container text-center">
