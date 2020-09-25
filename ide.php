@@ -12,64 +12,202 @@
 
 ?>
 
-
+<!DOCTYPE html>
 <html>
 <head>
-	<title>ide2</title>
-	<link rel="stylesheet" href="css/style.css" type="text/css">
-     <title>ide2</title>
-	<!-- tab img -->
-	<link rel="shortcut icon" type="image/x-icon" href="assets/img/ide2.png">
+  
     
-	<!-- css plugin ----------------------------------------------------------------------------------------------------------------------------------------------- -->
-	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
-	<link rel="stylesheet" href="assets/css/magnific-popup.css">
-	<link rel="stylesheet" href="assets/css/flexslider.css">
-	<link rel="stylesheet" href="assets/css/aos.css">
-	<!-- main css ------------------------------------------------------------------------------------------------------------------------------------------------- -->
-	<link rel="stylesheet" href="assets/css/style.css">
-	<link rel="stylesheet" href="assets/css/style-responsives.css">
-	<!-- google fonts ---------------------------------------------------------------------------------------------------------------------------------------------- -->
-	<link href="https://fonts.googleapis.com/css?family=Hind:600|Lato:300,400|Ubuntu" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-<style>
-#button1 , #button2
- {
-display:inline-block;
-/**other codes**/
-}
-</style>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>COMPILER</title>
+        <link rel="shortcut icon" type="image/x-icon" href="assets/img/ide2.png">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" type="image/jpg" href="img/logo.jpg">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="js/vendor/jquery-1.12.0.min.js"></script>
+
+
+
+
+
+
+
+
 </head>
 <body>
-<ul class="breadcrumb">
-	<li><a href="index.php">Home</a></li>
-	<li><a href="rank.php">Rank</a></li>
-  <li><a href="logout.php">Logout</a></li>
-</ul>	
-<form>
-  <div class="form-group col-sm-7 col-xs-12 inputDiv">
-    <select style="width: 18em; display:inline;" name="programTypeId">
-        <option value="1">GNU G++11 5.1.0</option>
-        <option value="2">GNU G++14 6.4.0</option>
-        <option value="3">GNU G++17 9.2.0 </option>
-        <option value="4">Java 11.0.6</option>
-        <option value="5">Python 2.7.15</option>
-        <option value="6">Python 3.7.2</option>
-    </select>
-  </div>
-  <div class="form-group col-sm-7 col-xs-12 inputDiv">
-     <textarea id="myInput" placeholder="write your input" maxlength="10000" class="gb wf form-control input" style="height:200px;"></textarea>
-     <button onclick="myFunction()">Copy text</button>
-    <input type="file" class="form-control-file" id="button2">
+<div class="main">
+
+  <div class="row">
+  <div class="col-sm-12">
+  <nav class="navbar navbar-inverse navbar-fixed-top nbar">
+    <div class="navbar-header">
+      <a class="navbar-brand lspace" href="#">COMPILER</a>
+    </div>
+    <ul class="nav navbar-nav">
+    
+    <li class="space"><a href="index.php">Home</a></li>
+      <li class="space"><a href="#"><i class="fa fa-code ispace"></i>Compiler</a></li>
+      <li class="space"><a href="logout.php">Logout</a></li>
+      
+      
+    </ul>
+  
+</nav>
 </div>
-<script>
-function myFunction() {
-  var copyText = document.getElementById("myInput");
-  copyText.select();
-  copyText.setSelectionRange(0, 99999)
-  document.execCommand("copy");
-  alert("Copied the text: " + copyText.value);
-}
-</script>
+</div>
+
+
+<div class="row log">
+<div class="col-sm-10">
+<div class=""><h3 style="text-align:center;">Online Compiler</h3></div>
+</div>
+
+<div class="col-sm-1">
+
+</div>
+
+<div class="col-sm-1">
+  
+</div>
+
+</div>
+
+
+
+
+<div class="row cspace">
+<div class="col-sm-8">
+<div class="form-group">
+<form action="compile.php" id="form" name="f2" method="POST" >
+<label for="lang">Choose Language</label>
+
+<select class="form-control" name="language">
+<option value="c">C</option>
+<option value="cpp">C++</option>
+<option value="cpp11">C++11</option>
+<option value="java">Java</option>
+
+
+</select><br><br>
+
+<label for="ta">Write Your Code</label>
+<textarea class="form-control" name="code" rows="10" cols="50"></textarea><br><br>
+<label for="in">Enter Your Input</label>
+<textarea class="form-control" name="input" rows="10" cols="50"></textarea><br><br>
+<input type="submit" id="st" class="btn btn-success" value="Run Code"><br><br><br>
+
+
 </form>
+
+<script type="text/javascript">
+  
+  $(document).ready(function(){
+
+     $("#st").click(function(){
+  
+           $("#div").html("Loading ......");
+
+
+     });
+
+  });
+
+
+</script>
+
+<script>
+//wait for page load to initialize script
+$(document).ready(function(){
+    //listen for form submission
+    $('form').on('submit', function(e){
+      //prevent form from submitting and leaving page
+      e.preventDefault();
+
+      // AJAX 
+      $.ajax({
+            type: "POST", //type of submit
+            cache: false, //important or else you might get wrong data returned to you
+            url: "compile.php", //destination
+            datatype: "html", //expected data format from process.php
+            data: $('form').serialize(), //target your form's data and serialize for a POST
+            success: function(result) { // data is the var which holds the output of your process.php
+
+                // locate the div with #result and fill it with returned data from process.php
+                $('#div').html(result);
+            }
+        });
+    });
+});
+</script>
+
+<label for="out">Output</label>
+<textarea id='div' class="form-control" name="output" rows="10" cols="50"></textarea><br><br>
+
+<!--<script>
+"use strict";
+function submitForm(oFormElement)
+{
+  var xhr = new XMLHttpRequest();
+  var display=document.getElementById('div');
+  xhr.onload = function(){ display.innerHTML=xhr.responseText; }
+  xhr.open (oFormElement.method, oFormElement.action, true);
+  xhr.send (new FormData (oFormElement));
+  return false;
+}
+</script>-->
+<!--<label for="out">Output</label>
+<textarea id='div' class="form-control" name="output" rows="10" cols="50"></textarea><br><br>-->
+
+
+
+
+</div>
+</div>
+
+<div class="col-sm-4">
+
+  
+</div>
+</div>
+</div>
+<br><br><br>
+<div class="area">
+<div class="well foot">
+<div class="row area">
+
+<div class="col-sm-5">
+
+
+<div class="fm">
+
+<b></b><br>
+</div>
+
+
+<div id="time"></div>
+    
+</div>
+</div>
+</div>
+<script type="text/javascript">
+    window.onload = startInterval;
+    function startInterval()
+    {
+        setInterval("startTime();",1000);
+    }
+    
+    function startTime()
+    {
+        document.getElementById('time').innerHTML = Date();  
+    }
+  </script>
+</body>
+</html>
+
+
